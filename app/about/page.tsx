@@ -19,13 +19,14 @@ const About =() =>{
   
     return(
         <motion.div className="h-full" initial={{y:"-200vh"}} animate={{y:"0vh"}} transition={{duration:1, ease:"easeOut"}}>
+          
 
         {/* Container  */}
         <div className="h-full overflow-scroll lg:flex" ref={containerRef}>
             {/* Text Container  */}
-            <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-20 md:gap-24 lg:gap-32 xl:gap-48  lg:w-2/3 xl:1/2 lg:pr-0">
+            <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-20 md:gap-24 lg:gap-32 xl:gap-48  lg:w-2/3 xl:1/2 lg:pr-0 ">
                 {/* biography container  */}
-            <div className="flex flex-col gap-12 justify-center"> 
+            <div className="flex flex-col gap-12 justify-center text-black"> 
                 <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sollicitudin et nisl eu ultrices. Quisque consectetur vitae nunc quis tincidunt. Vivamus ullamcorper orci vel pharetra pretium. Etiam sollicitudin egestas pretium. Etiam pellentesque euismod augue eget placerat. Nam facilisis lectus tempus sapien auctor scelerisque. Quisque vehicula sem nec feugiat vehicula.
                 </p>
@@ -121,7 +122,7 @@ fill="#000000" stroke="none">
             </motion.svg>
             </div>
                {/* experience container  */}
-               <div className="flex flex-col gap-12 justify-center pb-48" ref={experienceRef}> 
+               <div className="flex flex-col gap-12 justify-center pb-48 text-black" ref={experienceRef}> 
                  
                 {/* experience title  */}
                 <motion.h1 className="font-bold text-2xl" 

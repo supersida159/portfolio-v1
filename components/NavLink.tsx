@@ -13,7 +13,7 @@ const NavLink: React.FC<NavLinkProps> = ( { link } ) => { // Desctructure link p
     const pathName = usePathname(); // Corrected hook usage
     return (
         <Link href={link.url}>
-            <a className={`text-sm rounded-md font-semibold p-1 ${pathName === link.url ? 'bg-black text-white' : 'text-black'}`}>{link.title}</a> {/* Changed Link to anchor tag */}
+            <p className={`text-sm rounded-md font-semibold p-1 ${pathName === link.url ? 'bg-black text-white' : 'text-black'}`}>{link.title}</p> {/* Changed Link to anchor tag */}
         </Link>
     );
 };
