@@ -78,15 +78,15 @@ const NavBar =() =>{
             {/* <div>Logo</div> */}
             <div className="md:hidden lg:flex w-1/3 justify-center">
                 <Link href="/" className="text-sm bg-black rounded-md font-semibold p-1">
-                    <span className="text-white ">Lama</span>
+                    <span className="text-white ">Tung</span>
                     <span className="bg-white text-black rounded-md px-1">.Dev</span>
                 </Link>
             </div>
             <div className="hidden md:flex flex-row gap-4 w-1/3  justify-end">
-               <Link href={"#"} >
+               <Link href={"https://github.com/supersida159"} >
                  <GitHubIcon />
                </Link>
-               <Link href={"#"} >
+               <Link href={"https://www.facebook.com/tung.duong.94043/"} >
                  <Image src="/images/facebook.png" alt="facebook" width={24} height={24}></Image>
                </Link>
                <Link href={"#"} >

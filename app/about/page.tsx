@@ -28,9 +28,10 @@ const About =() =>{
                 {/* biography container  */}
             <div className="flex flex-col gap-12 justify-center text-black"> 
                 <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sollicitudin et nisl eu ultrices. Quisque consectetur vitae nunc quis tincidunt. Vivamus ullamcorper orci vel pharetra pretium. Etiam sollicitudin egestas pretium. Etiam pellentesque euismod augue eget placerat. Nam facilisis lectus tempus sapien auctor scelerisque. Quisque vehicula sem nec feugiat vehicula.
+                <p>As a Backend Developer, I specialize in crafting the invisible backbone of web applications, ensuring they function smoothly and efficiently. With a strong foundation in Golang and expertise in frameworks like Gin and libraries like GORM, I orchestrate the server-side logic, data integration, and application architecture. My proficiency extends to managing databases like MySQL, designing RESTful APIs for seamless communication between front and back ends, and implementing robust authentication and authorization mechanisms to safeguard sensitive data. besides i understand pubsub, async job, tracing , GRPC and can work with AWS S3, cloudfront. With a passion for problem-solving and a commitment to staying updated with the latest industry trends, I strive to create scalable, secure, and high-performing backend systems that power innovative digital experiences.
+
                 </p>
-                <span className="italic"> Lorem ipsum dolor sit a met, consectetur adipiscing elit.</span>
+                <span className="italic"> Technologies I look forward to learning: microservices, kafka </span>
                 <div className="self-end">
                 <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="245.000000pt" height="60.000000pt" viewBox="0 0 820.000000 200.000000"
@@ -142,13 +143,13 @@ fill="#000000" stroke="none">
                         {/* Left  */}
                         <div className="w-1/3">
                             {/* job titlte */}
-                            <div className="bg-white p-3 rounded-s-lg rounded-b-lg font-semibold">Fullstack FreeLancer Engineer</div>
+                            <div className="bg-white p-3 rounded-s-lg rounded-b-lg font-semibold">Quanlity Engineer</div>
                             {/* Job Desc  */}
-                            <div className="p-3 text-sm italic">Hanlde FullStack for my friend</div>
+                            <div className="p-3 text-sm italic">Work with US, chinese vendor to improve product</div>
                              {/* Job Data  */}
-                             <div className="p-3 text-red-400 text-sm font-semibold">2023-Present</div>
+                             <div className="p-3 text-red-400 text-sm font-semibold">2019-2023</div>
                               {/* Job Company  */}
-                            <div className="p-3 rounded-md bg-white text-sm font-semibold w-fit">Freelancer</div>
+                            <div className="p-3 rounded-md bg-white text-sm font-semibold w-fit">Ashley Industrial</div>
                         </div>
                         {/* Center  */}
                         <div className="w-1/6 ">
@@ -190,30 +191,7 @@ fill="#000000" stroke="none">
                     </div>
 
 
-                    {/* Third Job */}
-                    <div className="flex flex-row justify-between">
-                        {/* Left  */}
-                        <div className="w-1/3">
-                            {/* job titlte */}
-                            <div className="bg-white p-3 rounded-s-lg rounded-b-lg font-semibold">Fullstack FreeLancer Engineer</div>
-                            {/* Job Desc  */}
-                            <div className="p-3 text-sm italic">Hanlde FullStack for my friend</div>
-                             {/* Job Data  */}
-                             <div className="p-3 text-red-400 text-sm font-semibold">2023-Present</div>
-                              {/* Job Company  */}
-                            <div className="p-3 rounded-md bg-white text-sm font-semibold w-fit">Freelancer</div>
-                        </div>
-                        {/* Center  */}
-                        <div className="w-1/6 ">
-                            {/* line */}
-                           <div className="w-1 h-full bg-gray-600 rounded relative">
-                             {/* Line Circle  */}
-                             <div className="absolute w-5 h-5 rounded-full bg-white ring-4 ring-red-400 -left-2"></div>
-                           </div>
-                        </div>
-                        {/* Right  */}
-                        <div className="w-1/3"></div>
-                    </div>
+             
 
   
                  </motion.div>
