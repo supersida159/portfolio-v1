@@ -8,6 +8,8 @@ const About =() =>{
 
     const containerRef = useRef<HTMLDivElement>(null);
 
+    const skills = ["NextJS",  "Javascript", "Typescript","TailwindCSS", "Git" ,"Golang", "Microservices", "MySQL", "Websocket","Redis"];
+
   const { scrollYProgress } = useScroll({ container: containerRef });
 
   const skillRef =useRef<HTMLHeadingElement>(null);
@@ -92,11 +94,11 @@ fill="#000000" stroke="none">
                  animate={isSkillInView ? {x:0}:{} } 
                  transition={{delay:0.2}}
                 >
-                    <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:text-black hover:bg-white">NextJS</div>
-                    <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:text-black hover:bg-white">Golang</div>
-                    <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:text-black hover:bg-white">Tailwind</div>
-                    <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:text-black hover:bg-white">TypeScript</div>
-                    <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:text-black hover:bg-white">MySQL</div>
+                  {skills.map((skill)=>(
+                    // eslint-disable-next-line react/jsx-key
+                    <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:text-black hover:bg-white">{skill}</div>
+                  ))}
+
                 </motion.div>
                 {/* SKILL SCROLL SVG */}
             <motion.svg
@@ -180,14 +182,43 @@ fill="#000000" stroke="none">
                         {/* Right  */}
                         <div className="w-1/3">
                                  {/* job titlte */}
-                                 <div className="bg-white p-3 rounded-s-lg rounded-b-lg font-semibold">Fullstack FreeLancer Engineer</div>
+                                 <div className="bg-white p-3 rounded-s-lg rounded-b-lg font-semibold">BackEnd Developer</div>
                             {/* Job Desc  */}
-                            <div className="p-3 text-sm italic">Hanlde FullStack for my friend</div>
+                            <div className="p-3 text-sm italic">Build and maintain catfish farming and management system </div>
                              {/* Job Data  */}
-                             <div className="p-3 text-red-400 text-sm font-semibold">2023-Present</div>
+                             <div className="p-3 text-red-400 text-sm font-semibold">03/2023-04/2024</div>
                               {/* Job Company  */}
-                            <div className="p-3 rounded-md bg-white text-sm font-semibold w-fit">Freelancer</div>
+                            <div className="p-3 rounded-md bg-white text-sm font-semibold w-fit">BAOMI Hoan Cau</div>
                         </div>
+
+                    
+
+                        
+                    </div>
+
+                        {/* Third Job  */}
+                        <div className="flex flex-row justify-between">
+                        {/* Left  */}
+                        <div className="w-1/3">
+                            {/* job titlte */}
+                            <div className="bg-white p-3 rounded-s-lg rounded-b-lg font-semibold">BackEnd Developer</div>
+                            {/* Job Desc  */}
+                            <div className="p-3 text-sm italic">Building a school management system from begin</div>
+                             {/* Job Data  */}
+                             <div className="p-3 text-red-400 text-sm font-semibold">05/2024 - Present</div>
+                              {/* Job Company  */}
+                            <div className="p-3 rounded-md bg-white text-sm font-semibold w-fit">Happy house kindergarten</div>
+                        </div>
+                        {/* Center  */}
+                        <div className="w-1/6 ">
+                            {/* line */}
+                           <div className="w-1 h-full bg-gray-600 rounded relative">
+                             {/* Line Circle  */}
+                             <div className="absolute w-5 h-5 rounded-full bg-white ring-4 ring-red-400 -left-2"></div>
+                           </div>
+                        </div>
+                        {/* Right  */}
+                        <div className="w-1/3"></div>
                     </div>
 
 

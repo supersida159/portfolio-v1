@@ -83,7 +83,7 @@ const NavBar =() =>{
                 </Link>
             </div>
             <div className="hidden md:flex flex-row gap-4 w-1/3  justify-end">
-               <Link href={"https://github.com/supersida159"} >
+               <Link href={"https://github.com/TungDuongDev96"} >
                  <GitHubIcon />
                </Link>
                <Link href={"https://www.facebook.com/tung.duong.94043/"} >
@@ -94,8 +94,8 @@ const NavBar =() =>{
                </Link>
             </div>
             {/* <div>Search</div> */}
-            <div className="md:hidden w-1/3  z-40">
-            <button className={`z-50 w-10 h-8 flex flex-col relative justify-between text-sm ${isOpenMenu ? 'text-white' : 'text-black'}`} onClick={() => setIsOpenMenu((prev) => !prev)}>
+            <div className="md:hidden w-1/3 flex z-40 justify-end	">
+            <button className={`z-50 w-10 h-8 flex flex-col relative justify-between text-sm place-items-end ${isOpenMenu ? 'text-white' : 'text-black'}`} onClick={() => setIsOpenMenu((prev) => !prev)}>
                 <motion.div
                 variants={topVariants}
                 animate={isOpenMenu ? "open" : "closed"}
