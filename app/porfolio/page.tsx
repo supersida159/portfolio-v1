@@ -1,5 +1,6 @@
 "use client";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { link } from "fs";
 import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
@@ -11,37 +12,39 @@ const items = [
     title: "E-Commerce With Golang and NexJS",
     desc: "Simple E-commerce with Golang and Next.js with basic feature like login, register, order.",
     img: "https://s3.ap-southeast-1.amazonaws.com/g04.images/img/1715074235247409200.png",
+    link: "https://front-end.tungdev1996.online"
   },
   {
     id: 2,
     color: "from-blue-300 to-violet-300",
-    title: "Next.js Medium Blog",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    title: "Online wedding invitations",
+    desc: "A simple website for online wedding invitations",
+    img: "/images/wedding.png",
+    link:"https://tungthamwedding.tungdev1996.online/?name=Ch%E1%BB%8B%20Th%E1%BA%AFm%20v%C3%A0%20gia%20%C4%91%C3%ACnh"
   },
-  // {
-  //   id: 3,
-  //   color: "from-violet-300 to-purple-300",
-  //   title: "Vanilla Book App",
-  //   desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-  //   img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-  //   link: "https://lama.dev",
-  // },
-  // {
-  //   id: 4,
-  //   color: "from-purple-300 to-red-300",
-  //   title: "Spotify Music App",
-  //   desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-  //   img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-  //   link: "https://lama.dev",
-  // },
+  {
+    id: 3,
+    color: "from-violet-300 to-purple-300",
+    title: "Ayumi School Project(Happy House kindergarten)",
+    desc: "Develop an app for managing a kindergarten, featuring student and parent check-in/check-out with face detection, notifications, messaging and chat, student reviews, and compatibility with website, iOS, and Android platforms.",
+    img: "/images/happyHouse.png",
+    link: "porfolio/Ayumi-School-Project",
+  },
+  {
+    id: 4,
+    color: "from-purple-300 to-red-300",
+    title: "Catfish Management System",
+    desc: "Developed a digital data management system for Pangasius fish farms, addressing the inefficiencies of manual processes using paper and Excel. Functions include: Technicians proposing, Regional Directors approving, Warehouse Managers confirming, Adjusting quantities due to weather, Proposing medication, Reporting dead fish, Inventory management, and Harvesting",
+    img: "/images/BAOMI.png",
+    link:"https://baomi.vn"
+  },
 ];
 
 const PortfolioPage = () => {
   const ref = useRef<HTMLDivElement>(null);
 
   const { scrollYProgress } = useScroll({ target: ref });
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-80%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-75%"]);
 
   return (
     <motion.div
@@ -66,13 +69,13 @@ const PortfolioPage = () => {
                   <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl">
                     {item.title}
                   </h1>
-                  <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
+                  <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[700px] xl:h-[420px]">
                     <Image src={item.img} alt="" fill />
                   </div>
                   <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">
                     {item.desc}
                   </p>
-                  <Link href="/porfolio/E-commerce" className="flex justify-end">
+                  <Link href={item.link} className="flex justify-end mr-6">
                     <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">See Demo</button>
                   </Link>
                 </div>
@@ -98,7 +101,7 @@ const PortfolioPage = () => {
             </defs>
             <text fill="#000">
               <textPath xlinkHref="#circlePath" className="text-xl text-white">
-                Fresher Back-end Developer
+                Back-end Developer
               </textPath>
             </text>
           </motion.svg>
