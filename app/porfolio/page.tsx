@@ -10,7 +10,7 @@ const items = [
     id: 1,
     color: "from-red-300 to-blue-300",
     title: "E-Commerce With Golang and NexJS",
-    desc: "Simple E-commerce with Golang and Next.js with basic feature like login, register, order.",
+    desc: "Simple E-commerce with Golang and Next.js with basic feature like login, register, order. Developed on digital ocean server with docker and nginx.Image saved in aws s3 with aws cloudfront",
     img: "https://s3.ap-southeast-1.amazonaws.com/g04.images/img/1715074235247409200.png",
     link: "https://front-end.tungdev1996.online"
   },
@@ -34,7 +34,7 @@ const items = [
     id: 4,
     color: "from-purple-300 to-red-300",
     title: "Catfish Management System",
-    desc: "Developed a digital data management system for Pangasius fish farms, addressing the inefficiencies of manual processes using paper and Excel. Functions include: Technicians proposing, Regional Directors approving, Warehouse Managers confirming, Adjusting quantities due to weather, Proposing medication, Reporting dead fish, Inventory management, and Harvesting",
+    desc: "Developed a digital data management system for Pangasius fish farms to address the inefficiencies of manual processes involving paper and Excel. Key functions include: proposal submissions by technicians, approvals by regional directors, confirmations by warehouse managers, quantity adjustments due to weather, medication proposals, dead fish reporting, inventory management, and harvesting. The system utilizes microservices architecture, Pub/Sub messaging, and Firebase Cloud Messaging (FCM).",
     img: "/images/BAOMI.png",
     link:"https://baomi.vn"
   },

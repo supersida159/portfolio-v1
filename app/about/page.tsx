@@ -30,10 +30,10 @@ const About =() =>{
                 {/* biography container  */}
             <div className="flex flex-col gap-12 justify-center text-black"> 
                 <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
-                <p>As a Backend Developer, I specialize in crafting the invisible backbone of web applications, ensuring they function smoothly and efficiently. With a strong foundation in Golang and expertise in frameworks like Gin and libraries like GORM, I orchestrate the server-side logic, data integration, and application architecture. My proficiency extends to managing databases like MySQL, designing RESTful APIs for seamless communication between front and back ends, and implementing robust authentication and authorization mechanisms to safeguard sensitive data. besides i understand pubsub, async job, tracing , GRPC and can work with AWS S3, cloudfront. With a passion for problem-solving and a commitment to staying updated with the latest industry trends, I strive to create scalable, secure, and high-performing backend systems that power innovative digital experiences.
+                <p>As a Backend Developer, I specialize in building the foundational infrastructure that powers web applications, ensuring seamless performance and reliability. With a deep expertise in Golang and a strong command of frameworks like Gin and libraries such as GORM, I design and implement server-side logic that drives data integration and application architecture. My skills extend to managing relational databases like MySQL, crafting RESTful APIs for efficient communication between the front and back ends, and deploying robust authentication and authorization systems to protect sensitive data.In addition, I am well-versed in pub/sub models, asynchronous job processing, tracing, and gRPC, and I have experience working with cloud services like AWS S3 and CloudFront. Driven by a passion for problem-solving and a dedication, I aim to create scalable, secure, and high-performance backend systems.
 
                 </p>
-                <span className="italic"> Technologies I look forward to learning: microservices, kafka </span>
+                <span className="italic"> Technologies I look forward to learning: microservices(kafka) </span>
                 <div className="self-end">
                 <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="245.000000pt" height="60.000000pt" viewBox="0 0 820.000000 200.000000"
