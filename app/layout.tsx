@@ -6,10 +6,9 @@ import TransistionProvider from "@/components/transistionProvider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Create Next App",
-  description: "The Best animated portfolio page",
+  title: "TungDev Portfolio", 
+  description: "Portfolio for TungDev as Golang Developer"
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -18,8 +17,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-      <TransistionProvider>{children}</TransistionProvider>
-        </body>
+        <TransistionProvider>{children}</TransistionProvider>
+      </body>
     </html>
   );
 }
