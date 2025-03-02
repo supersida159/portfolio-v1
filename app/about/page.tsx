@@ -8,7 +8,7 @@ const About =() =>{
 
     const containerRef = useRef<HTMLDivElement>(null);
 
-    const skills = ["NextJS",  "Javascript", "Typescript","TailwindCSS", "Git" ,"Golang", "Microservices", "MySQL", "Websocket","Redis"];
+    const skills = ["NextJS",  "Javascript", "Typescript","TailwindCSS", "Git" ,"Golang", "Microservices", "MySQL", "Websocket","Redis","DevOps"];
 
   const { scrollYProgress } = useScroll({ container: containerRef });
 
@@ -33,7 +33,7 @@ const About =() =>{
                 <p>As a Backend Developer, I specialize in building the foundational infrastructure that powers web applications, ensuring seamless performance and reliability. With a deep expertise in Golang and a strong command of frameworks like Gin and libraries such as GORM, I design and implement server-side logic that drives data integration and application architecture. My skills extend to managing relational databases like MySQL, crafting RESTful APIs for efficient communication between the front and back ends, and deploying robust authentication and authorization systems to protect sensitive data.In addition, I am well-versed in pub/sub models, asynchronous job processing, tracing, and gRPC, and I have experience working with cloud services like AWS S3 and CloudFront. Driven by a passion for problem-solving and a dedication, I aim to create scalable, secure, and high-performance backend systems.
 
                 </p>
-                <span className="italic"> Technologies I look forward to learning: microservices(kafka) </span>
+                <span className="italic"> Technologies I look forward to learning: AWS solution architect </span>
                 <div className="self-end">
                 <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="245.000000pt" height="60.000000pt" viewBox="0 0 820.000000 200.000000"
@@ -134,24 +134,30 @@ fill="#000000" stroke="none">
                  transition={{delay:0.2}}
                 > Experience</motion.h1>
                  {/* experience list */}
+                 <motion.h1 className="font-bold text-2xl" 
+                 initial={{x:"-500px"}}
+                 animate={isExperienceInView ? {x:0}:{} } 
+                 transition={{delay:0.2}}
+                > Experience</motion.h1>
+                 {/* experience list */}
                  <motion.div 
                   initial={{x:"-500px"}}
                   animate={isExperienceInView ? {x:0}:{} } 
                   transition={{delay:0.2}}
                  >
                     {/* experience list item  */}
-                    {/* first Job  */}
+                    {/* First Job (most recent) */}
                     <div className="flex flex-row justify-between">
                         {/* Left  */}
                         <div className="w-1/3">
                             {/* job titlte */}
-                            <div className="bg-white p-3 rounded-s-lg rounded-b-lg font-semibold">Quanlity Engineer</div>
+                            <div className="bg-white p-3 rounded-s-lg rounded-b-lg font-semibold">BackEnd Developer</div>
                             {/* Job Desc  */}
-                            <div className="p-3 text-sm italic">Work with US, chinese vendor to improve product</div>
+                            <div className="p-3 text-sm italic">Building a school management system from begin</div>
                              {/* Job Data  */}
-                             <div className="p-3 text-red-400 text-sm font-semibold">2019-2023</div>
+                             <div className="p-3 text-red-400 text-sm font-semibold">05/2024 - Present</div>
                               {/* Job Company  */}
-                            <div className="p-3 rounded-md bg-white text-sm font-semibold w-fit">Ashley Industrial</div>
+                            <div className="p-3 rounded-md bg-white text-sm font-semibold w-fit">Happy house kindergarten</div>
                         </div>
                         {/* Center  */}
                         <div className="w-1/6 ">
@@ -189,25 +195,21 @@ fill="#000000" stroke="none">
                              <div className="p-3 text-red-400 text-sm font-semibold">03/2023-04/2024</div>
                               {/* Job Company  */}
                             <div className="p-3 rounded-md bg-white text-sm font-semibold w-fit">BAOMI Hoan Cau</div>
-                        </div>
-
-                    
-
-                        
+                        </div>                        
                     </div>
 
-                        {/* Third Job  */}
-                        <div className="flex flex-row justify-between">
+                    {/* Third Job (oldest) */}
+                    <div className="flex flex-row justify-between">
                         {/* Left  */}
                         <div className="w-1/3">
                             {/* job titlte */}
-                            <div className="bg-white p-3 rounded-s-lg rounded-b-lg font-semibold">BackEnd Developer</div>
+                            <div className="bg-white p-3 rounded-s-lg rounded-b-lg font-semibold">Quanlity Engineer</div>
                             {/* Job Desc  */}
-                            <div className="p-3 text-sm italic">Building a school management system from begin</div>
+                            <div className="p-3 text-sm italic">Work with US, chinese vendor to improve product</div>
                              {/* Job Data  */}
-                             <div className="p-3 text-red-400 text-sm font-semibold">05/2024 - Present</div>
+                             <div className="p-3 text-red-400 text-sm font-semibold">2019-2023</div>
                               {/* Job Company  */}
-                            <div className="p-3 rounded-md bg-white text-sm font-semibold w-fit">Happy house kindergarten</div>
+                            <div className="p-3 rounded-md bg-white text-sm font-semibold w-fit">Ashley Industrial</div>
                         </div>
                         {/* Center  */}
                         <div className="w-1/6 ">
@@ -220,11 +222,6 @@ fill="#000000" stroke="none">
                         {/* Right  */}
                         <div className="w-1/3"></div>
                     </div>
-
-
-             
-
-  
                  </motion.div>
             </div>
             </div>
