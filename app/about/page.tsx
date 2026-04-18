@@ -134,30 +134,29 @@ fill="#000000" stroke="none">
                  transition={{delay:0.2}}
                 > Experience</motion.h1>
                  {/* experience list */}
-                 <motion.h1 className="font-bold text-2xl" 
-                 initial={{x:"-500px"}}
-                 animate={isExperienceInView ? {x:0}:{} } 
-                 transition={{delay:0.2}}
-                > Experience</motion.h1>
-                 {/* experience list */}
                  <motion.div 
                   initial={{x:"-500px"}}
                   animate={isExperienceInView ? {x:0}:{} } 
                   transition={{delay:0.2}}
                  >
-                    {/* experience list item  */}
                     {/* First Job (most recent) */}
                     <div className="flex flex-row justify-between">
                         {/* Left  */}
                         <div className="w-1/3">
-                            {/* job titlte */}
-                            <div className="bg-white p-3 rounded-s-lg rounded-b-lg font-semibold">BackEnd Developer</div>
+                            {/* job title */}
+                            <div className="bg-white p-3 rounded-s-lg rounded-b-lg font-semibold">Backend Developer</div>
                             {/* Job Desc  */}
-                            <div className="p-3 text-sm italic">Building a school management system from begin</div>
+                            <div className="p-3 text-sm italic">
+                                <ul className="list-disc pl-4 space-y-1">
+                                    <li>Engineered core backend logic for multiplayer games in Golang within a Microservices environment.</li>
+                                    <li>Designed infrastructure utilizing NATS, MySQL, and Redis.</li>
+                                    <li>Implemented social features, IAP flows, and automated AI bots.</li>
+                                </ul>
+                            </div>
                              {/* Job Data  */}
-                             <div className="p-3 text-red-400 text-sm font-semibold">05/2024 - Present</div>
+                             <div className="p-3 text-red-400 text-sm font-semibold">09/2025 - Present</div>
                               {/* Job Company  */}
-                            <div className="p-3 rounded-md bg-white text-sm font-semibold w-fit">Happy house kindergarten</div>
+                            <div className="p-3 rounded-md bg-white text-sm font-semibold w-fit">Zyneric Solution</div>
                         </div>
                         {/* Center  */}
                         <div className="w-1/6 ">
@@ -174,9 +173,7 @@ fill="#000000" stroke="none">
                     {/* Second Job */}
                      <div className="flex flex-row justify-between">
                         {/* Left  */}
-                        <div className="w-1/3">
-                       
-                        </div>
+                        <div className="w-1/3"></div>
                         {/* Center  */}
                         <div className="w-1/6 ">
                             {/* line */}
@@ -187,14 +184,20 @@ fill="#000000" stroke="none">
                         </div>
                         {/* Right  */}
                         <div className="w-1/3">
-                                 {/* job titlte */}
-                                 <div className="bg-white p-3 rounded-s-lg rounded-b-lg font-semibold">BackEnd Developer</div>
+                            {/* job title */}
+                            <div className="bg-white p-3 rounded-s-lg rounded-b-lg font-semibold">Backend Developer</div>
                             {/* Job Desc  */}
-                            <div className="p-3 text-sm italic">Build and maintain catfish farming and management system </div>
+                            <div className="p-3 text-sm italic">
+                                <ul className="list-disc pl-4 space-y-1">
+                                    <li>Built Restful APIs, designed PostgreSQL/MongoDB schemas.</li>
+                                    <li>Configured KrakenD API gateway, JWT & Redis auth.</li>
+                                    <li>Developed push notifications with Gorush and chat features via Tinode.</li>
+                                </ul>
+                            </div>
                              {/* Job Data  */}
-                             <div className="p-3 text-red-400 text-sm font-semibold">03/2023-04/2024</div>
+                             <div className="p-3 text-red-400 text-sm font-semibold">04/2023 - 08/2025</div>
                               {/* Job Company  */}
-                            <div className="p-3 rounded-md bg-white text-sm font-semibold w-fit">BAOMI Hoan Cau</div>
+                            <div className="p-3 rounded-md bg-white text-sm font-semibold w-fit">Happy House Kindergarten</div>
                         </div>                        
                     </div>
 
@@ -202,18 +205,24 @@ fill="#000000" stroke="none">
                     <div className="flex flex-row justify-between">
                         {/* Left  */}
                         <div className="w-1/3">
-                            {/* job titlte */}
-                            <div className="bg-white p-3 rounded-s-lg rounded-b-lg font-semibold">Quanlity Engineer</div>
+                            {/* job title */}
+                            <div className="bg-white p-3 rounded-s-lg rounded-b-lg font-semibold">Backend Developer</div>
                             {/* Job Desc  */}
-                            <div className="p-3 text-sm italic">Work with US, chinese vendor to improve product</div>
+                            <div className="p-3 text-sm italic">
+                                <ul className="list-disc pl-4 space-y-1">
+                                    <li>Developed APIs and designed database schemas.</li>
+                                    <li>Implemented JWT & Redis authentication, configured Nginx & Docker.</li>
+                                    <li>Created FCM notification system and Redis Pub/Sub microservices.</li>
+                                </ul>
+                            </div>
                              {/* Job Data  */}
-                             <div className="p-3 text-red-400 text-sm font-semibold">2019-2023</div>
+                             <div className="p-3 text-red-400 text-sm font-semibold">03/2021 - 2023</div>
                               {/* Job Company  */}
-                            <div className="p-3 rounded-md bg-white text-sm font-semibold w-fit">Ashley Industrial</div>
+                            <div className="p-3 rounded-md bg-white text-sm font-semibold w-fit">BAO MI HOAN CAU</div>
                         </div>
                         {/* Center  */}
                         <div className="w-1/6 ">
-                            {/* line */}
+                             {/* line */}
                            <div className="w-1 h-full bg-gray-600 rounded relative">
                              {/* Line Circle  */}
                              <div className="absolute w-5 h-5 rounded-full bg-white ring-4 ring-red-400 -left-2"></div>
